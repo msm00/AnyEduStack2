@@ -1,0 +1,29 @@
+[project]
+name = "anyedustack2"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Milan Šmíd",email = "smidmi@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "faker (>=37.1.0,<38.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "numpy (>=2.2.5,<3.0.0)",
+    "mypy-extensions (>=1.1.0,<2.0.0)",
+    "types-python-dateutil (>=2.9.0.20241206,<3.0.0.0)",
+    "pandas-stubs (>=2.2.3.250308,<3.0.0.0)",
+    "mypy (>=1.15.0,<2.0.0)",
+    "pyarrow (>=19.0.1,<20.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
